@@ -36,7 +36,7 @@ async function main() {
 	}
 
 	// Charger les données GeoJSON des frontières des pays
-	fetch('countries.geo.json')
+	fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
 		.then(response => response.json())
 		.then(data => {
 			L.geoJSON(data, {
@@ -54,7 +54,7 @@ async function main() {
 	};
 
 	// Charger les données GeoJSON des frontières des États-Unis
-	fetch('countries/' + firstThreeCharacters + '.geo.json')
+	fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries/' + firstThreeCharacters + '.geo.json')
 		.then(response => response.json())
 		.then(data => {
 			L.geoJSON(data, {
