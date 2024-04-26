@@ -65,9 +65,9 @@ async function main() {
 		.bindPopup(arg3)
 		.openPopup();
 		//add a tile layer
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	/*L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 19,
-		}).addTo(map);
+		}).addTo(map);*/
 }
 
 main();
